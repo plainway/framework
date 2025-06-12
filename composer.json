@@ -1,0 +1,31 @@
+{
+    "name": "plainway/framework",
+    "license": "MIT",
+    "description": "The skeleton HTTP application",
+    "type": "project",
+    "authors": [
+        {
+            "name": "iextra",
+            "email": "iextra.denis@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "App\\Config\\": "config/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "extro/di": "1.0",
+        "extro/http-kernel": "1.0",
+        "extro/http-request-handler": "1.0",
+        "extro/http-router": "1.0",
+        "extro/view-engine": "1.0",
+        "laminas/laminas-diactoros": "3.6"
+    },
+    "require-dev": {
+        "iextra/dumper": "^1.0",
+        "phpunit/phpunit": "^9.6"
+    }
+}
